@@ -12,7 +12,7 @@ export class AppComponent {
 
 	@ViewChild('testButton', {static: false}) testButton: ElementRef;
 	
-	@HostListener('document:npmclick', ['$event']) onClick(event) {
+	@HostListener('document:click', ['$event']) onClick(event) {
 		if (this.testButton.nativeElement.contains(event.target)) {// or some similar check
 			console.log('Click Inside');
 		} else {

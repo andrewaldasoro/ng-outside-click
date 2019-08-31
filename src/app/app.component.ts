@@ -1,4 +1,9 @@
 import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
+import {
+    faFingerprint,
+    faFrownOpen
+} from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
     selector: 'app-root',
@@ -6,6 +11,8 @@ import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+    faFingerprint = faFingerprint;
+    faFrownOpen = faFrownOpen;
 
     title = 'outside-click';
 
